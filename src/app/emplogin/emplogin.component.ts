@@ -28,9 +28,9 @@ export class EmploginComponent {
         this.password=""
         if(response.status=="success")
         {
-          let userid=response.userid
-          console.log(userid)
-             localStorage.setItem("userInfo",userid)
+          let empcode=response.userid
+          console.log(empcode)
+             localStorage.setItem("userInfo",empcode)
              this.router.navigate(['/emphome'])
            
         }

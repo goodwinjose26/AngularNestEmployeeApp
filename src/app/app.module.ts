@@ -9,7 +9,9 @@ import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { EmploginComponent } from './emplogin/emplogin.component'
+import { EmploginComponent } from './emplogin/emplogin.component';
+import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
+import { EmphomeComponent } from './emphome/emphome.component'
 const myRoute:Routes=[
   {
    path:"",
@@ -18,6 +20,10 @@ const myRoute:Routes=[
   {
     path:"addemp",
     component:AddemployeeComponent
+  },
+  {
+    path:"emphome",
+    component:EmphomeComponent
   }
 ]
 @NgModule({
@@ -26,7 +32,9 @@ const myRoute:Routes=[
     AdminnavbarComponent,
     AdminloginComponent,
     AddemployeeComponent,
-    EmploginComponent
+    EmploginComponent,
+    EmpnavbarComponent,
+    EmphomeComponent
   ],
   imports: [
     BrowserModule,

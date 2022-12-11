@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-adminlogin',
@@ -20,7 +21,7 @@ constructor(private route:Router){}
     console.log(data)
 
     if (this.username=="admin" && this.password=="1234") {
-this.route.navigate(["/adminhome"])      
+this.route.navigate(["/addemp"])      
     } else {
       alert("invalid credentials")
       

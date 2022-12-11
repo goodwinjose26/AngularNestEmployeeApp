@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EmploginComponent } from './emplogin/emplogin.component';
 import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
-import { EmphomeComponent } from './emphome/emphome.component'
+import { EmphomeComponent } from './emphome/emphome.component';
+import { ViewempComponent } from './viewemp/viewemp.component'
 const myRoute:Routes=[
   {
    path:"",
@@ -38,7 +39,8 @@ const myRoute:Routes=[
     AddemployeeComponent,
     EmploginComponent,
     EmpnavbarComponent,
-    EmphomeComponent
+    EmphomeComponent,
+    ViewempComponent
   ],
   imports: [
     BrowserModule,

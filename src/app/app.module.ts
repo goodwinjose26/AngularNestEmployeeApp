@@ -13,7 +13,8 @@ import { EmploginComponent } from './emplogin/emplogin.component';
 import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
 import { EmphomeComponent } from './emphome/emphome.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
-import { TaskComponent } from './task/task.component'
+import { TaskComponent } from './task/task.component';
+import { ViewtaskComponent } from './viewtask/viewtask.component'
 const myRoute:Routes=[
   {
    path:"",
@@ -38,6 +39,10 @@ const myRoute:Routes=[
   {
     path:"addtask",
     component:TaskComponent
+  },
+  {
+    path:"viewtask",
+    component:ViewtaskComponent
   }
 ]
 @NgModule({
@@ -50,7 +55,8 @@ const myRoute:Routes=[
     EmpnavbarComponent,
     EmphomeComponent,
     ViewempComponent,
-    TaskComponent
+    TaskComponent,
+    ViewtaskComponent
   ],
   imports: [
     BrowserModule,

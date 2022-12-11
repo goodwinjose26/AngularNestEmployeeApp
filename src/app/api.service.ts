@@ -19,24 +19,9 @@ export class ApiService {
    {
      return this.http.post("http://localhost:8080/login",dataToSend)
    }
-  // getprofile=(dataToSend:any)=>
-  // {
-  //   return this.http.post("http://localhost:8080/profileview",dataToSend)
-  // }
+ 
 
-  // addcomplaint=(dataToSend:any)=>
-  // {
-  //   return this.http.post("http://localhost:8080/addcomplaint",dataToSend)
-  // }
-
-  // viewcomplaint =()=>
-  // {
-  //   return this.http.get("http://localhost:8080/viewallcomplaint")
-  // }
-  // mycomplaint=(dataToSend:any)=>
-  // {
-  //   return this.http.post("http://localhost:8080/viewmycomplaint",dataToSend)
-  // }
+  
   viewemp =()=>
   {
     return this.http.get("http://localhost:8080/view")

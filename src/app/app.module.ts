@@ -24,6 +24,10 @@ const myRoute:Routes=[
   {
     path:"emphome",
     component:EmphomeComponent
+  },
+  {
+    path:"emplogin",
+    component:EmploginComponent
   }
 ]
 @NgModule({

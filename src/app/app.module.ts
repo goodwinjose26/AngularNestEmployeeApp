@@ -34,6 +34,10 @@ const myRoute:Routes=[
   {
     path:"viewemp",
     component:ViewempComponent
+  },
+  {
+    path:"addtask",
+    component:TaskComponent
   }
 ]
 @NgModule({

@@ -15,7 +15,7 @@ export class TaskComponent {
   constructor(private api:ApiService){}
   readValue=()=>
   {
-    let data:any={"empcode":this.empcode,"task":this.task,"status":this.status}
+    let data:any={"empcode":this.empcode,"task":this.task,"status":"assigned"}
     console.log(data)
     this.api.addTask(data).subscribe(
       (response:any)=>
@@ -26,7 +26,8 @@ export class TaskComponent {
           alert("task added")
           this.empcode=""
           this.task=""
-          
+
+
         }
         else{
           alert("something went wrong")

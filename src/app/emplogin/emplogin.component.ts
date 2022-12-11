@@ -31,7 +31,7 @@ export class EmploginComponent {
           let userid=response.userid
           console.log(userid)
              localStorage.setItem("userInfo",userid)
-             this.router.navigate(['/profileview'])
+             this.router.navigate(['/emphome'])
            
         }
         else{

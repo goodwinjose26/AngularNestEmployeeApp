@@ -12,33 +12,33 @@ export class ApiService {
   
   regValues=(datatosend:any)=>
   {
-    return this.http.post("http://localhost:8080/reg",datatosend)
+    return this.http.post("http://localhost:8080/addemployee",datatosend)
   }
-  loginUser = (data:any)=>{
-    return this.http.post("http://localhost:8080/login", data)
-  }
-  addLogin=(dataToSend:any)=>
-  {
-    return this.http.post("http://localhost:8080/login",dataToSend)
-  }
-  getprofile=(dataToSend:any)=>
-  {
-    return this.http.post("http://localhost:8080/profileview",dataToSend)
-  }
+  // loginUser = (data:any)=>{
+  //   return this.http.post("http://localhost:8080/login", data)
+  // }
+  // addLogin=(dataToSend:any)=>
+  // {
+  //   return this.http.post("http://localhost:8080/login",dataToSend)
+  // }
+  // getprofile=(dataToSend:any)=>
+  // {
+  //   return this.http.post("http://localhost:8080/profileview",dataToSend)
+  // }
 
-  addcomplaint=(dataToSend:any)=>
-  {
-    return this.http.post("http://localhost:8080/addcomplaint",dataToSend)
-  }
+  // addcomplaint=(dataToSend:any)=>
+  // {
+  //   return this.http.post("http://localhost:8080/addcomplaint",dataToSend)
+  // }
 
-  viewcomplaint =()=>
-  {
-    return this.http.get("http://localhost:8080/viewallcomplaint")
-  }
-  mycomplaint=(dataToSend:any)=>
-  {
-    return this.http.post("http://localhost:8080/viewmycomplaint",dataToSend)
-  }
+  // viewcomplaint =()=>
+  // {
+  //   return this.http.get("http://localhost:8080/viewallcomplaint")
+  // }
+  // mycomplaint=(dataToSend:any)=>
+  // {
+  //   return this.http.post("http://localhost:8080/viewmycomplaint",dataToSend)
+  // }
 
   
 

@@ -11,7 +11,7 @@ export class ViewtaskComponent {
 
   constructor(private api:ApiService)
   {
-    api.viewemp().subscribe(
+    api.viewtask().subscribe(
       (response)=>
       {
         this.data=response;

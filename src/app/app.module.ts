@@ -29,6 +29,10 @@ const myRoute:Routes=[
   {
     path:"emplogin",
     component:EmploginComponent
+  },
+  {
+    path:"viewemp",
+    component:ViewempComponent
   }
 ]
 @NgModule({

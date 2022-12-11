@@ -12,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmploginComponent } from './emplogin/emplogin.component';
 import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
 import { EmphomeComponent } from './emphome/emphome.component';
-import { ViewempComponent } from './viewemp/viewemp.component'
+import { ViewempComponent } from './viewemp/viewemp.component';
+import { TaskComponent } from './task/task.component'
 const myRoute:Routes=[
   {
    path:"",
@@ -44,7 +45,8 @@ const myRoute:Routes=[
     EmploginComponent,
     EmpnavbarComponent,
     EmphomeComponent,
-    ViewempComponent
+    ViewempComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,

@@ -39,6 +39,10 @@ export class ApiService {
   // {
   //   return this.http.post("http://localhost:8080/viewmycomplaint",dataToSend)
   // }
+  viewemp =()=>
+  {
+    return this.http.get("http://localhost:8080/view")
+  }
 
   
 

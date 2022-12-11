@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-addemployee',
@@ -24,7 +25,7 @@ export class AddemployeeComponent {
   {
     
     
-    let data:any={"name":this.name,"empcode":this.empcode,"address":this.address,"email":this.email,"phno":this.phno,"username":this.username,"password":this.password,"cpass":this.cpass}
+    let data:any={"name":this.name,"empcode":this.empcode,"address":this.address,"email":this.email,"phno":this.phno,"username":this.username,"password":this.password}
     console.log(data)
     this.api.regValues(data).subscribe(
       (response:any)=>
@@ -33,7 +34,7 @@ export class AddemployeeComponent {
         if(response.status=="success")
         {
           alert("added")
-          this.name="",this.empcode="",this.address="",this.email="",this.phno="",this.username="",this.password="",this.cpass=""
+          this.name="",this.empcode="",this.address="",this.email="",this.phno="",this.username="",this.password=""
         }
         else
         {

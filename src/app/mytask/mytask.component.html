@@ -6,6 +6,9 @@
      
         <th scope="col">TASK</th>
         <th scope="col">STATUS</th>
+        <th scope="col">UPDATE STATUS</th>
+
+
 
 
       </tr>
@@ -15,6 +18,9 @@
         
         <td>{{i.task}}</td>
         <td>{{i.status}}</td>
+        <td>
+          <button class="btn btn-primary" (click)="update(i.empcode)">UPDATE STATUS</button>
+      </td>
         
 
       </tr>
